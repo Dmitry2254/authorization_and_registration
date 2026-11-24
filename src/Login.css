@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+    );
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.login-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #667eea;
+    color: white;
+    font-size: 30px;
+}
+
+.login-card h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.login-card label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.login-card input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.12);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 85px;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    border: none;
+    background: transparent;
+    color: #667eea;
+    cursor: pointer;
+}
+
+.forgot {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #5266d5;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #e53935;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.register {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px;
+    }
+
+    .login-card h1 {
+        font-size: 23px;
+    }
+}
